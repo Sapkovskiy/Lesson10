@@ -14,7 +14,7 @@ public class task2 {
         System.out.println(a);
     }
     public static boolean If (String a,String b){
-        return a.endsWith(b);
+        return a.endsWith(b)&& a.startsWith(b);
 
     }
 }
