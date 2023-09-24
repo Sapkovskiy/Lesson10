@@ -19,13 +19,26 @@ import java.sql.SQLOutput;
  * I 1
  */
 public class HomeWork {
+    private static final String EMPTY ="";
+    private static final String SPASE =" ";
+
     public static void main(String[] args) {
-        replacement();
-        System.out.println(replacement());
+     //   replacement();
+     //   System.out.println(replacement());
+        String a ="а роза упала на лапу Азора";
+        System.out.println(equalse(a));
+
+    }
+    private static boolean equalse (String a){
+        String b = a.replace(SPASE,EMPTY);
+        StringBuilder g = new StringBuilder(b);
+        StringBuilder r =g.reverse();
+        boolean s =r.toString().equalsIgnoreCase(b);
+        return s;
     }
 
     private static boolean replacement() {
-        String line = "-12421-";
+        String line = "1234321";
         String lineCopy ="";
         int j=0;
         for (int i = line.length()-1; i >=0; i--) {
