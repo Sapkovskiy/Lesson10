@@ -10,8 +10,8 @@ import java.util.Arrays;
 public class task5 {
     public static void main(String[] args) {
 
-        String target = "Жили были 2 веселых гуся: один серый, другой белый. ";
-        int n =10;
+        String target = "123456789011";
+        int n =3;
         String[] splits = split(target, n);
         System.out.println(Arrays.toString(splits));
     }
